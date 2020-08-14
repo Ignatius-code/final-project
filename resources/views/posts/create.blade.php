@@ -2,7 +2,7 @@
 
 @section('content')
 
-<div class="ml-2 mt-3">
+<div class="card-body">
   <div class="card card-primary">
     <div class="card-header">
       <h3 class="card-title">Create New</h3>
@@ -13,16 +13,30 @@
       @csrf
       <div class="card-body">
         <div class="form-group">
-          <label for="title">Title</label>
-          <input type="text" class="form-control" id="title" name="title" value="{{old('title', '')}}" placeholder="Title">
-          @error('title')
+          <label for="judul">Judul</label>
+          <input type="text" class="form-control" id="judul" name="judul" value="{{old('judul', '')}}" placeholder="Judul">
+          @error('judul')
             <div class="alert alert-danger">{{ $message }}</div>
           @enderror
         </div>
         <div class="form-group">
-          <label for="body">Body</label>
-          <input type="text" class="form-control" id="body" name="body" value="{{old('body', '')}}" placeholder="Body">
-          @error('body')
+          <label for="isi">Isi</label>
+          <input type="text" class="form-control" id="isi" name="isi" value="{{old('isi', '')}}" placeholder="Isi">
+          @error('isi')
+            <div class="alert alert-danger">{{ $message }}</div>
+          @enderror
+        </div>
+        <div class="form-group">
+          <label for="pertanyaan">Pertanyaan</label>
+          <input type="text" class="form-control" id="pertanyaan" name="pertanyaan" value="{{old('pertanyaan', '')}}" placeholder="Pertanyaan">
+          @error('pertanyaan')
+            <div class="alert alert-danger">{{ $message }}</div>
+          @enderror
+        </div>
+        <div class="form-group">
+          <label for="tag">Tag</label>
+          <input type="text" class="form-control" id="tag" name="tag" value="{{old('tag', '')}}" placeholder="Tag">
+          @error('tag')
             <div class="alert alert-danger">{{ $message }}</div>
           @enderror
         </div>
