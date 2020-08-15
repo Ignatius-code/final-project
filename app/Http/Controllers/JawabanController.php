@@ -15,15 +15,17 @@ class JawabanController extends Controller
     	$post = DB::table('jawaban');
     	return view('posts.komentar');
     }
-    public function store(Request $request){
+    public function store1(Request $request){
     	// dd($request->all());
     	$request->validate([
-    		'jawaban' => 'required|unique:jawaban',
+    		'jawaban' => 'required|unique:jawaban'
+    		,
     		'komentar' => 'required',
     		'vote' => 'required'
     	]);
-    	$query = DB::table('posts')->insert([
-    		"jawaban" => $request["jawaban"],
+    	$query = DB::table('jawaban')->insert([
+    		"jawaban" => $request["jawaban"]
+    		,
     		"komentar" => $request["komentar"],
     		"vote" => $request["vote"]
     	]);
@@ -31,7 +33,7 @@ class JawabanController extends Controller
     	return redirect('/posts')->with('success', 'Post Berhasil Disimpan!');
     }
     public function index(){
-        $posts = DB::table('jawaban')->get();
+        $posts = DB::table('posts')->get();
 
     	return view('posts.index', compact('posts'));
     }

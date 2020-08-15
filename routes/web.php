@@ -26,4 +26,5 @@ Route::put('/posts/{id}', 'PostController@update');
 Route::delete('/posts/{id}', 'PostController@destroy');
 Route::get('/posts/{id}/jawaban', 'JawabanController@jawaban');
 Route::get('/posts/{id}/komentar', 'JawabanController@komentar');
-Route::post('/posts', 'PostController@store');
+Route::post('/posts/jawaban', 'JawabanController@store1');
+Route::post('/posts', 'JawabanController@index');

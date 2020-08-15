@@ -14,28 +14,28 @@
       <div class="card-body">
         <div class="form-group">
           <label for="judul">Judul</label>
-          <input type="text" class="form-control" id="judul" name="judul" value="{{old('judul', '')}}" placeholder="Judul">
+          <input type="text" class="form-control" id="judul" name="judul" value="{{old('judul', '')}}" placeholder="Judul" autocomplete="off">
           @error('judul')
             <div class="alert alert-danger">{{ $message }}</div>
           @enderror
         </div>
         <div class="form-group">
           <label for="isi">Isi</label>
-          <input type="text" class="form-control" id="isi" name="isi" value="{{old('isi', '')}}" placeholder="Isi">
+          <input type="text" class="form-control" id="isi" name="isi" value="{{old('isi', '')}}" placeholder="Isi" autocomplete="off">
           @error('isi')
             <div class="alert alert-danger">{{ $message }}</div>
           @enderror
         </div>
         <div class="form-group">
           <label for="pertanyaan">Pertanyaan</label>
-          <input type="text" class="form-control" id="pertanyaan" name="pertanyaan" value="{{old('pertanyaan', '')}}" placeholder="Pertanyaan">
+          <input type="text" class="form-control" id="pertanyaan" name="pertanyaan" value="{{old('pertanyaan', '')}}" placeholder="Pertanyaan" autocomplete="off">
           @error('pertanyaan')
             <div class="alert alert-danger">{{ $message }}</div>
           @enderror
         </div>
         <div class="form-group">
           <label for="tag">Tag</label>
-          <input type="text" class="form-control" id="tag" name="tag" value="{{old('tag', '')}}" placeholder="Tag">
+          <input type="text" class="form-control" id="tag" name="tag" value="{{old('tag', '')}}" placeholder="Tag" autocomplete="off">
           @error('tag')
             <div class="alert alert-danger">{{ $message }}</div>
           @enderror

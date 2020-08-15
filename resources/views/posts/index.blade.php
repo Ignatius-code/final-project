@@ -44,10 +44,10 @@
               </td>
             </tr>
             <tr>
-              <td colspan="3" class="table-success">Jawaban: </td>
+              <td colspan="3" class="table-success">Jawaban: Belum ada jawaban</td>
               <td  style="display: flex;" >
-                <a href="/posts/{id}/jawaban" class="btn btn-primary mr-1">Jawab</a>
-                <a href="/posts/{id}/komentar" class="btn btn-success">Komentar</a>
+                <a href="/posts/{id}/jawaban" class="btn btn-primary ml-2">Jawab</a>
+                <a href="/posts/{id}/komentar" class="btn btn-success ml-2">Komentar</a>
                 <a href="#" class="btn btn-warning ml-1">Vote</a>
               </td>
             </tr>
