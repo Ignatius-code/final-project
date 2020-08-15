@@ -34,7 +34,10 @@ class JawabanController extends Controller
     }
     public function index(){
         $posts = DB::table('posts')->get();
-
     	return view('posts.index', compact('posts'));
+    }
+    public function vote(){
+    	$post = DB::table('jawaban');
+    	return view('posts.vote');
     }
 }

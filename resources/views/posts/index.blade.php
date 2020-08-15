@@ -48,7 +48,7 @@
               <td  style="display: flex;" >
                 <a href="/posts/{id}/jawaban" class="btn btn-primary ml-2">Jawab</a>
                 <a href="/posts/{id}/komentar" class="btn btn-success ml-2">Komentar</a>
-                <a href="#" class="btn btn-warning ml-1">Vote</a>
+                <a href="/posts/{id}/vote" class="btn btn-warning ml-1">Vote</a>
               </td>
             </tr>
           @empty
